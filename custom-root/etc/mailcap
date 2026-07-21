@@ -1,0 +1,415 @@
+###############################################################################
+#
+#  MIME media types and programs that process those types
+#
+#  Much of this file is generated automatically by the program "update-mime".
+#  Please see the "update-mime" man page for more information.
+#
+#  Users can add their own rules if they wish by creating a ".mailcap"
+#  file in their home directory.  Entries included there will take
+#  precedence over those listed here.
+#
+###############################################################################
+
+
+###############################################################################
+#
+#  User section follows:  Any entries included in this section will take
+#  precedence over those created by "update-mime".  DO NOT CHANGE the
+#  "User Section Begins" and "User Section Ends" lines, or anything outside
+#  of this section!
+#
+
+# ----- User Section Begins ----- #
+# -----  User Section Ends  ----- #
+
+###############################################################################
+
+text/plain; less %s; needsterminal
+application/x-troff-man; /usr/bin/man -X100 -l %s; test=test -n "$DISPLAY" -a -e /usr/bin/gxditview; description=Man page
+text/troff; /usr/bin/man -X100 -l %s; test=test -n "$DISPLAY" -a -e /usr/bin/gxditview; description=Man page
+application/x-troff-man; /usr/bin/man -l %s; needsterminal; description=Man page
+text/troff; /usr/bin/man -l %s; needsterminal; description=Man page
+text/html; /usr/bin/sensible-browser %s; description=HTML Text; nametemplate=%s.html
+application/x-troff-man; /usr/bin/nroff -t -mandoc -Tutf8; copiousoutput; print=/usr/bin/nroff -t -mandoc -Tutf8 | print text/plain:-
+text/troff; /usr/bin/nroff -t -mandoc -Tutf8; copiousoutput; print=/usr/bin/nroff -t -mandoc -Tutf8 | print text/plain:-
+application/x-info; /usr/bin/info -f %s; needsterminal; description=GNU Info document
+image/jpeg; pix '%s'; test=test -n "$DISPLAY"
+image/gif; pix '%s'; test=test -n "$DISPLAY"
+image/png; pix '%s'; test=test -n "$DISPLAY"
+application/x-ogg; rhythmbox %s; description="Ogg Vorbis audio"; test=test -n "$DISPLAY"; nametemplate=%s.ogg
+application/ogg; rhythmbox %s; description="Ogg Media"; test=test -n "$DISPLAY"
+audio/x-mp3; rhythmbox %s; description="MP3 audio"; test=test -n "$DISPLAY"; nametemplate=%s.mp3
+audio/x-scpls; rhythmbox %s; description="MP3 ShoutCast playlist"; test=test -n "$DISPLAY"; nametemplate=%s.pls
+audio/x-mpeg; rhythmbox %s; description="MP3 audio"; test=test -n "$DISPLAY"
+audio/mpeg; rhythmbox %s; description="MP3 audio"; test=test -n "$DISPLAY"
+audio/x-mpegurl; rhythmbox %s; description="Playlist"; test=test -n "$DISPLAY"; nametemplate=%s.m3u
+application/x-flac; rhythmbox %s; description="FLAC audio"; test=test -n "$DISPLAY"; nametemplate=%s.flac
+application/x-bittorrent; transmission-gtk %s; description="GTK-based BitTorrent client"; test=test -n "$DISPLAY"
+text/plain; more %s; needsterminal
+x-scheme-handler/apt; apturl %s; test=test -n "$DISPLAY"
+text/plain; featherpad %s; test=test -n "$DISPLAY"
+application/x-zerosize; featherpad %s; test=test -n "$DISPLAY"
+text/html; firefox %s; test=test -n "$DISPLAY"
+text/xml; firefox %s; test=test -n "$DISPLAY"
+application/xhtml+xml; firefox %s; test=test -n "$DISPLAY"
+application/xml; firefox %s; test=test -n "$DISPLAY"
+application/rss+xml; firefox %s; test=test -n "$DISPLAY"
+application/rdf+xml; firefox %s; test=test -n "$DISPLAY"
+image/gif; firefox %s; test=test -n "$DISPLAY"
+image/jpeg; firefox %s; test=test -n "$DISPLAY"
+image/png; firefox %s; test=test -n "$DISPLAY"
+x-scheme-handler/http; firefox %s; test=test -n "$DISPLAY"
+x-scheme-handler/https; firefox %s; test=test -n "$DISPLAY"
+x-scheme-handler/ftp; firefox %s; test=test -n "$DISPLAY"
+x-scheme-handler/chrome; firefox %s; test=test -n "$DISPLAY"
+video/webm; firefox %s; test=test -n "$DISPLAY"
+application/x-xpinstall; firefox %s; test=test -n "$DISPLAY"
+application/pkcs12; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs12+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs7-mime; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs7-mime+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs8; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs8+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-cert; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-cert+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-crl; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-crl+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pem-file; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pem-key; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pkcs12; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pkcs7-certificates; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-x509-ca-cert; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-x509-user-cert; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs10; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs10+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-spkac; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-spkac+base64; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/vnd.debian.binary-package; gdebi-gtk %s; test=test -n "$DISPLAY"
+application/x-cd-image; gnome-disk-image-mounter %s; test=test -n "$DISPLAY"
+application/x-raw-disk-image; gnome-disk-image-mounter %s; test=test -n "$DISPLAY"
+application/x-cd-image; gnome-disks --restore-disk-image %s; test=test -n "$DISPLAY"
+application/x-raw-disk-image; gnome-disks --restore-disk-image %s; test=test -n "$DISPLAY"
+application/x-raw-disk-image-xz-compressed; gnome-disks --restore-disk-image %s; test=test -n "$DISPLAY"
+x-scheme-handler/geo; kde-geo-uri-handler --coordinate-template "https://www.google.com/maps/@<LAT>,<LON>,<Z>z" --query-template "https://www.google.com/maps/search/<Q>" --fallback "https://www.google.com/maps/" %s; test=test -n "$DISPLAY"
+x-scheme-handler/telnet; ktelnetservice5 %s; test=test -n "$DISPLAY"
+x-scheme-handler/rlogin; ktelnetservice5 %s; test=test -n "$DISPLAY"
+x-scheme-handler/ssh; ktelnetservice5 %s; test=test -n "$DISPLAY"
+application/pcx; lximage-qt %s; test=test -n "$DISPLAY"
+image/bmp; lximage-qt %s; test=test -n "$DISPLAY"
+image/gif; lximage-qt %s; test=test -n "$DISPLAY"
+image/jpeg; lximage-qt %s; test=test -n "$DISPLAY"
+image/jpg; lximage-qt %s; test=test -n "$DISPLAY"
+image/png; lximage-qt %s; test=test -n "$DISPLAY"
+image/svg+xml; lximage-qt %s; test=test -n "$DISPLAY"
+image/svg-xml; lximage-qt %s; test=test -n "$DISPLAY"
+image/tiff; lximage-qt %s; test=test -n "$DISPLAY"
+image/webp; lximage-qt %s; test=test -n "$DISPLAY"
+image/x-bmp; lximage-qt %s; test=test -n "$DISPLAY"
+image/x-pcx; lximage-qt %s; test=test -n "$DISPLAY"
+image/x-portable-bitmap; lximage-qt %s; test=test -n "$DISPLAY"
+image/x-portable-greymap; lximage-qt %s; test=test -n "$DISPLAY"
+image/x-portable-pixmap; lximage-qt %s; test=test -n "$DISPLAY"
+image/x-targa; lximage-qt %s; test=test -n "$DISPLAY"
+image/x-tga; lximage-qt %s; test=test -n "$DISPLAY"
+application/x-7z-compressed; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-7z-compressed-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-ace; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-alz; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-ar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-arj; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-bzip2-compressed-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-bzip1; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-bzip1-compressed-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-cabinet; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-cbr; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-cbz; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/vnd.efi.iso; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-compress; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-compressed-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-cpio; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-deb; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/vnd.debian.binary-package; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-ear; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-ms-dos-executable; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-gtar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/gzip; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-gzpostscript; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-java-archive; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-lha; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-lhz; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-lrzip; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-lrzip-compressed-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-lzip; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-lzip-compressed-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-lzma; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-lzma-compressed-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-lzop; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-lzop-compressed-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-ms-wim; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-rar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-rar-compressed; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/vnd.efi.img; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-rpm; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-rzip; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-tarz; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-stuffit; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-war; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-xz; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-xz-compressed-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/zstd; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-zstd-compressed-tar; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-zip; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-zip-compressed; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-zoo; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/zip; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/x-archive; lxqt-archiver %s; test=test -n "$DISPLAY"
+application/vnd.ms-cab-compressed; lxqt-archiver %s; test=test -n "$DISPLAY"
+text/plain; micro %s; needsterminal
+text/x-chdr; micro %s; needsterminal
+text/x-csrc; micro %s; needsterminal
+text/x-c++hdr; micro %s; needsterminal
+text/x-c++src; micro %s; needsterminal
+text/x-java; micro %s; needsterminal
+text/x-dsrc; micro %s; needsterminal
+text/x-pascal; micro %s; needsterminal
+text/x-perl; micro %s; needsterminal
+text/x-python; micro %s; needsterminal
+application/x-php; micro %s; needsterminal
+application/x-httpd-php3; micro %s; needsterminal
+application/x-httpd-php4; micro %s; needsterminal
+application/x-httpd-php5; micro %s; needsterminal
+application/xml; micro %s; needsterminal
+text/html; micro %s; needsterminal
+text/css; micro %s; needsterminal
+text/x-sql; micro %s; needsterminal
+text/x-diff; micro %s; needsterminal
+application/vnd.flatpak.ref; mintinstall-fp-handler %s; test=test -n "$DISPLAY"
+application/vnd.flatpak.repo; mintinstall-fp-handler %s; test=test -n "$DISPLAY"
+text/x-apt-sources-list; pkexec mintsources %s; test=test -n "$DISPLAY"
+application/x-openbox-theme; obconf %s; test=test -n "$DISPLAY"
+x-scheme-handler/geo; kde-geo-uri-handler --coordinate-template "https://www.openstreetmap.org/#map=<Z>/<LAT>/<LON>" --query-template "https://www.openstreetmap.org/search?query=<Q>" --fallback "https://www.openstreetmap.org" %s; test=test -n "$DISPLAY"
+inode/directory; baobab %s; test=test -n "$DISPLAY"
+x-scheme-handler/com.googleusercontent.apps.590402290962-2i0b7rqma8b9nmtfrcp7fa06g6cf7g74; /usr/libexec/evolution-data-server/evolution-oauth2-handler %s; test=test -n "$DISPLAY"
+x-scheme-handler/eds-oauth2; /usr/libexec/evolution-data-server/evolution-oauth2-handler %s; test=test -n "$DISPLAY"
+application/bzip2; file-roller %s; test=test -n "$DISPLAY"
+application/gzip; file-roller %s; test=test -n "$DISPLAY"
+application/vnd.android.package-archive; file-roller %s; test=test -n "$DISPLAY"
+application/vnd.ms-cab-compressed; file-roller %s; test=test -n "$DISPLAY"
+application/vnd.debian.binary-package; file-roller %s; test=test -n "$DISPLAY"
+application/x-7z-compressed; file-roller %s; test=test -n "$DISPLAY"
+application/x-7z-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-ace; file-roller %s; test=test -n "$DISPLAY"
+application/x-alz; file-roller %s; test=test -n "$DISPLAY"
+application/x-apple-diskimage; file-roller %s; test=test -n "$DISPLAY"
+application/x-ar; file-roller %s; test=test -n "$DISPLAY"
+application/x-archive; file-roller %s; test=test -n "$DISPLAY"
+application/x-arj; file-roller %s; test=test -n "$DISPLAY"
+application/x-brotli; file-roller %s; test=test -n "$DISPLAY"
+application/x-bzip-brotli-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-bzip; file-roller %s; test=test -n "$DISPLAY"
+application/x-bzip-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-bzip1; file-roller %s; test=test -n "$DISPLAY"
+application/x-bzip1-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-cabinet; file-roller %s; test=test -n "$DISPLAY"
+application/x-cd-image; file-roller %s; test=test -n "$DISPLAY"
+application/x-compress; file-roller %s; test=test -n "$DISPLAY"
+application/x-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-cpio; file-roller %s; test=test -n "$DISPLAY"
+application/x-chrome-extension; file-roller %s; test=test -n "$DISPLAY"
+application/x-deb; file-roller %s; test=test -n "$DISPLAY"
+application/x-ear; file-roller %s; test=test -n "$DISPLAY"
+application/x-ms-dos-executable; file-roller %s; test=test -n "$DISPLAY"
+application/x-gtar; file-roller %s; test=test -n "$DISPLAY"
+application/x-gzip; file-roller %s; test=test -n "$DISPLAY"
+application/x-gzpostscript; file-roller %s; test=test -n "$DISPLAY"
+application/x-java-archive; file-roller %s; test=test -n "$DISPLAY"
+application/x-lha; file-roller %s; test=test -n "$DISPLAY"
+application/x-lhz; file-roller %s; test=test -n "$DISPLAY"
+application/x-lrzip; file-roller %s; test=test -n "$DISPLAY"
+application/x-lrzip-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-lz4; file-roller %s; test=test -n "$DISPLAY"
+application/x-lzip; file-roller %s; test=test -n "$DISPLAY"
+application/x-lzip-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-lzma; file-roller %s; test=test -n "$DISPLAY"
+application/x-lzma-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-lzop; file-roller %s; test=test -n "$DISPLAY"
+application/x-lz4-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-ms-wim; file-roller %s; test=test -n "$DISPLAY"
+application/x-rar; file-roller %s; test=test -n "$DISPLAY"
+application/x-rar-compressed; file-roller %s; test=test -n "$DISPLAY"
+application/x-rpm; file-roller %s; test=test -n "$DISPLAY"
+application/x-source-rpm; file-roller %s; test=test -n "$DISPLAY"
+application/x-rzip; file-roller %s; test=test -n "$DISPLAY"
+application/x-rzip-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-tarz; file-roller %s; test=test -n "$DISPLAY"
+application/x-tzo; file-roller %s; test=test -n "$DISPLAY"
+application/x-stuffit; file-roller %s; test=test -n "$DISPLAY"
+application/x-war; file-roller %s; test=test -n "$DISPLAY"
+application/x-xar; file-roller %s; test=test -n "$DISPLAY"
+application/x-xz; file-roller %s; test=test -n "$DISPLAY"
+application/x-xz-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-zip; file-roller %s; test=test -n "$DISPLAY"
+application/x-zip-compressed; file-roller %s; test=test -n "$DISPLAY"
+application/x-zstd-compressed-tar; file-roller %s; test=test -n "$DISPLAY"
+application/x-zoo; file-roller %s; test=test -n "$DISPLAY"
+application/zip; file-roller %s; test=test -n "$DISPLAY"
+application/zstd; file-roller %s; test=test -n "$DISPLAY"
+x-scheme-handler/goa-oauth2; /usr/libexec/goa-oauth2-handler %s; test=test -n "$DISPLAY"
+x-scheme-handler/com.googleusercontent.apps.44438659992-7kgjeitenc16ssihbtdjbgguch7ju55s; /usr/libexec/goa-oauth2-handler %s; test=test -n "$DISPLAY"
+application/x-ogg; rhythmbox %s; test=test -n "$DISPLAY"
+application/ogg; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-vorbis+ogg; rhythmbox %s; test=test -n "$DISPLAY"
+audio/vorbis; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-vorbis; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-scpls; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-mp3; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-mpeg; rhythmbox %s; test=test -n "$DISPLAY"
+audio/mpeg; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-mpegurl; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-flac; rhythmbox %s; test=test -n "$DISPLAY"
+audio/mp4; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-it; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-mod; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-s3m; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-stm; rhythmbox %s; test=test -n "$DISPLAY"
+audio/x-xm; rhythmbox %s; test=test -n "$DISPLAY"
+x-content/audio-player; rhythmbox-client --select-source %s; test=test -n "$DISPLAY"
+x-content/audio-cdda; rhythmbox-client --select-source %s; test=test -n "$DISPLAY"
+application/pgp-keys; seahorse %s; test=test -n "$DISPLAY"
+application/x-ssh-key; seahorse %s; test=test -n "$DISPLAY"
+application/pkcs12; seahorse %s; test=test -n "$DISPLAY"
+application/pkcs12+pem; seahorse %s; test=test -n "$DISPLAY"
+application/pkcs7-mime; seahorse %s; test=test -n "$DISPLAY"
+application/pkcs7-mime+pem; seahorse %s; test=test -n "$DISPLAY"
+application/pkcs8; seahorse %s; test=test -n "$DISPLAY"
+application/pkcs8+pem; seahorse %s; test=test -n "$DISPLAY"
+application/pkix-cert; seahorse %s; test=test -n "$DISPLAY"
+application/pkix-cert+pem; seahorse %s; test=test -n "$DISPLAY"
+application/pkix-crl; seahorse %s; test=test -n "$DISPLAY"
+application/pkix-crl+pem; seahorse %s; test=test -n "$DISPLAY"
+application/x-pem-file; seahorse %s; test=test -n "$DISPLAY"
+application/x-pem-key; seahorse %s; test=test -n "$DISPLAY"
+application/x-pkcs12; seahorse %s; test=test -n "$DISPLAY"
+application/x-pkcs7-certificates; seahorse %s; test=test -n "$DISPLAY"
+application/x-x509-ca-cert; seahorse %s; test=test -n "$DISPLAY"
+application/x-x509-user-cert; seahorse %s; test=test -n "$DISPLAY"
+application/pkcs10; seahorse %s; test=test -n "$DISPLAY"
+application/pkcs10+pem; seahorse %s; test=test -n "$DISPLAY"
+application/x-spkac; seahorse %s; test=test -n "$DISPLAY"
+application/x-spkac+base64; seahorse %s; test=test -n "$DISPLAY"
+inode/directory; /usr/bin/catfish %s; test=test -n "$DISPLAY"
+application/x-desktop; xfce4-panel --add=launcher %s; test=test -n "$DISPLAY"
+inode/directory; pcmanfm-qt %s; test=test -n "$DISPLAY"
+x-content/image-dcf; pix --import-photos %s; test=test -n "$DISPLAY"
+x-content/image-picturecd; pix --import-photos %s; test=test -n "$DISPLAY"
+x-scheme-handler/geo; kde-geo-uri-handler --coordinate-template "https://www.qwant.com/maps/#map=<Z>/<LAT>/<LON>" --query-template "https://www.qwant.com/maps/?q=<Q>&client=opensearch" --fallback "https://www.qwant.com/maps/" %s; test=test -n "$DISPLAY"
+inode/directory; thunar %s; test=test -n "$DISPLAY"
+application/x-tint2-theme; tint2conf %s; test=test -n "$DISPLAY"
+text/english; vim %s; needsterminal
+text/plain; vim %s; needsterminal
+text/x-makefile; vim %s; needsterminal
+text/x-c++hdr; vim %s; needsterminal
+text/x-c++src; vim %s; needsterminal
+text/x-chdr; vim %s; needsterminal
+text/x-csrc; vim %s; needsterminal
+text/x-java; vim %s; needsterminal
+text/x-moc; vim %s; needsterminal
+text/x-pascal; vim %s; needsterminal
+text/x-tcl; vim %s; needsterminal
+text/x-tex; vim %s; needsterminal
+application/x-shellscript; vim %s; needsterminal
+text/x-c; vim %s; needsterminal
+text/x-c++; vim %s; needsterminal
+x-scheme-handler/geo; kde-geo-uri-handler --coordinate-template "https://wheelmap.org/?lat=<LAT>&lon=<LON>" --query-template "https://wheelmap.org/search?q=<Q>" --fallback "https://wheelmap.org" %s; test=test -n "$DISPLAY"
+text/plain; xed %s; test=test -n "$DISPLAY"
+application/x-zerosize; xed %s; test=test -n "$DISPLAY"
+inode/directory; exo-open --launch FileManager %s; test=test -n "$DISPLAY"
+x-scheme-handler/trash; exo-open --launch FileManager %s; test=test -n "$DISPLAY"
+x-scheme-handler/mailto; exo-open --launch MailReader %s; test=test -n "$DISPLAY"
+x-scheme-handler/http; exo-open --launch WebBrowser %s; test=test -n "$DISPLAY"
+x-scheme-handler/https; exo-open --launch WebBrowser %s; test=test -n "$DISPLAY"
+application/pdf; xreader %s; test=test -n "$DISPLAY"
+application/x-bzpdf; xreader %s; test=test -n "$DISPLAY"
+application/x-gzpdf; xreader %s; test=test -n "$DISPLAY"
+application/x-xzpdf; xreader %s; test=test -n "$DISPLAY"
+application/postscript; xreader %s; test=test -n "$DISPLAY"
+application/x-bzpostscript; xreader %s; test=test -n "$DISPLAY"
+application/x-gzpostscript; xreader %s; test=test -n "$DISPLAY"
+image/x-eps; xreader %s; test=test -n "$DISPLAY"
+image/x-bzeps; xreader %s; test=test -n "$DISPLAY"
+image/x-gzeps; xreader %s; test=test -n "$DISPLAY"
+application/illustrator; xreader %s; test=test -n "$DISPLAY"
+application/x-dvi; xreader %s; test=test -n "$DISPLAY"
+application/x-bzdvi; xreader %s; test=test -n "$DISPLAY"
+application/x-gzdvi; xreader %s; test=test -n "$DISPLAY"
+image/vnd.djvu; xreader %s; test=test -n "$DISPLAY"
+image/vnd.djvu+multipage; xreader %s; test=test -n "$DISPLAY"
+image/tiff; xreader %s; test=test -n "$DISPLAY"
+application/vnd.comicbook-rar; xreader %s; test=test -n "$DISPLAY"
+application/vnd.comicbook+zip; xreader %s; test=test -n "$DISPLAY"
+application/x-cb7; xreader %s; test=test -n "$DISPLAY"
+application/x-cbr; xreader %s; test=test -n "$DISPLAY"
+application/x-cbt; xreader %s; test=test -n "$DISPLAY"
+application/x-cbz; xreader %s; test=test -n "$DISPLAY"
+application/x-ext-cb7; xreader %s; test=test -n "$DISPLAY"
+application/x-ext-cbr; xreader %s; test=test -n "$DISPLAY"
+application/x-ext-cbt; xreader %s; test=test -n "$DISPLAY"
+application/x-ext-cbz; xreader %s; test=test -n "$DISPLAY"
+application/oxps; xreader %s; test=test -n "$DISPLAY"
+application/vnd.ms-xpsdocument; xreader %s; test=test -n "$DISPLAY"
+application/epub+zip; xreader %s; test=test -n "$DISPLAY"
+image/bmp; xviewer %s; test=test -n "$DISPLAY"
+image/gif; xviewer %s; test=test -n "$DISPLAY"
+image/jpeg; xviewer %s; test=test -n "$DISPLAY"
+image/jpg; xviewer %s; test=test -n "$DISPLAY"
+image/pjpeg; xviewer %s; test=test -n "$DISPLAY"
+image/png; xviewer %s; test=test -n "$DISPLAY"
+image/tiff; xviewer %s; test=test -n "$DISPLAY"
+image/x-bmp; xviewer %s; test=test -n "$DISPLAY"
+image/x-gray; xviewer %s; test=test -n "$DISPLAY"
+image/x-icb; xviewer %s; test=test -n "$DISPLAY"
+image/x-ico; xviewer %s; test=test -n "$DISPLAY"
+image/x-png; xviewer %s; test=test -n "$DISPLAY"
+image/x-portable-anymap; xviewer %s; test=test -n "$DISPLAY"
+image/x-portable-bitmap; xviewer %s; test=test -n "$DISPLAY"
+image/x-portable-graymap; xviewer %s; test=test -n "$DISPLAY"
+image/x-portable-pixmap; xviewer %s; test=test -n "$DISPLAY"
+image/x-xbitmap; xviewer %s; test=test -n "$DISPLAY"
+image/x-xpixmap; xviewer %s; test=test -n "$DISPLAY"
+image/x-pcx; xviewer %s; test=test -n "$DISPLAY"
+image/svg+xml; xviewer %s; test=test -n "$DISPLAY"
+image/svg+xml-compressed; xviewer %s; test=test -n "$DISPLAY"
+image/vnd.wap.wbmp; xviewer %s; test=test -n "$DISPLAY"
+image/webp; xviewer %s; test=test -n "$DISPLAY"
+image/heif; xviewer %s; test=test -n "$DISPLAY"
+image/avif; xviewer %s; test=test -n "$DISPLAY"
+x-scheme-handler/ghelp; yelp %s; test=test -n "$DISPLAY"
+x-scheme-handler/help; yelp %s; test=test -n "$DISPLAY"
+x-scheme-handler/info; yelp %s; test=test -n "$DISPLAY"
+x-scheme-handler/man; yelp %s; test=test -n "$DISPLAY"
+text/plain; view %s; edit=vim %s; compose=vim %s; test=test -x /usr/bin/vim; needsterminal
+application/zip; unzip -l %s; nametemplate=%s.zip; copiousoutput
+text/plain; view %s; edit=vi %s; compose=vi %s; needsterminal
+image/gif; feh %s; test=test -n "$DISPLAY" ; description=GIF Image; nametemplate=%s.gif
+image/jpeg; feh %s; test=test -n "$DISPLAY" ; description=JPEG Image; nametemplate=%s.jpeg
+image/png; feh %s; test=test -n "$DISPLAY" ; description=PNG Image; nametemplate=%s.png
+image/tiff; feh %s; test=test -n "$DISPLAY" ; description=TIFF Image; nametemplate=%s.tiff
+image/x-portable-anymap; feh %s; test=test -n "$DISPLAY" ; description=PNM Image; nametemplate=%s.pnm
+image/targa; feh %s; test=test -n "$DISPLAY" ; description=TGA Image; nametemplate=%s.tga
+image/x-ms-bmp; feh %s; test=test -n "$DISPLAY" ; description=BMP Image; nametemplate=%s.bmp
+image/x-xpixmap; feh %s; test=test -n "$DISPLAY" ; description=XPM Image; nametemplate=%s.xpm
+image/pjpeg; feh %s; test=test -n "$DISPLAY" ; description=JPEG Image; nametemplate=%s.jpeg
+application/x-troff-man; /usr/bin/man -Tascii -l %s | col -b; copiousoutput; description=Man page
+text/troff; /usr/bin/man -Tascii -l %s | col -b; copiousoutput; description=Man page
+text/*; less %s; needsterminal
+text/*; view %s; edit=vim %s; compose=vim %s; test=test -x /usr/bin/vim; needsterminal
+application/x-info; /usr/bin/info --subnodes -o /dev/stdout -f %s 2>/dev/null; copiousoutput; description=GNU Info document
+application/x-tar; /bin/tar tvf %s; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+application/x-gtar; /bin/tar tvf %s; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+application/x-ustar; /bin/tar tvf %s; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+text/*; more %s; needsterminal
+text/*; view %s; edit=vi %s; compose=vi %s; needsterminal
+application/vnd.debian.binary-package; /usr/lib/mime/debian-view %s; needsterminal; description=Debian GNU/Linux Package; nametemplate=%s.deb

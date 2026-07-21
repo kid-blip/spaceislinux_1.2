@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Space GPU Check
+Exec=/usr/local/bin/space-gpu-check.sh
+Icon=system-run
+X-GNOME-Autostart-enabled=true

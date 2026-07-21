@@ -1,0 +1,10 @@
+RELEASE=1
+CODENAME=terra
+EDITION="Openbox"
+DESCRIPTION="SpaceIsLinux"
+DESKTOP=Gnome
+TOOLKIT=GTK
+NEW_FEATURES_URL=https://github/kid-blip/spaceislinux
+RELEASE_NOTES_URL=https://github/kid-blip/spaceislinux
+USER_GUIDE_URL=https://github/kid-blip/spaceislinux
+GRUB_TITLE=SpaceIsLinux 1.0 TERRA

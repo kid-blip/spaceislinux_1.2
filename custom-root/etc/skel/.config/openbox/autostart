@@ -1,0 +1,9 @@
+# 1. Ставим обои (нужен пакет feh)
+feh --bg-fill /usr/share/backgrounds/spaceislinux/wallpaper.jpg &
+
+# 2. Запускаем панель задач (если ставили tint2)
+tint2 &
+
+# 3. Наш ASCII-арт при старте терминала
+# Мы уже добавили его в .bashrc, так что просто подготовим терминал
+xfce4-terminal --command="bash -c 'cat /etc/boot_message; exec bash'" &

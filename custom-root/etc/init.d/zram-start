@@ -1,0 +1,5 @@
+#!/bin/bash
+modprobe zram
+zramctl --find --size 1G --algorithm lz4
+mkswap /dev/zram0
+swapon /dev/zram0 -p 100

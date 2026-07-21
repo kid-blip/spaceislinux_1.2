@@ -1,0 +1,15 @@
+[Unit]
+Description=ZRAM Optimized Swap for Old PCs
+After=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+# Загружаем модуль
+ExecStartPre=/sbin/modprobe zram
+# Настройка: используем lz4 (лучший для старых CPU) и выделяем 60% от RAM
+ExecStart=/bin/sh -c 'echo lz4 > /sys/block/zram0/comp_algorithm &&                       echo $(($(free -b | grep Mem | awk "{print $2}") * 60 / 100)) > /sys/block/zram0/disksize &&                       /sbin/mkswap /dev/zram0 &&                       /sbin/swapon /dev/zram0 -p 100'
+ExecStop=/bin/sh -c '/sbin/swapoff /dev/zram0 && echo 1 > /sys/block/zram0/reset'
+
+[Install]
+WantedBy=multi-user.target

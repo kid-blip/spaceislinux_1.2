@@ -1,0 +1,3 @@
+#!/bin/bash
+icewmbg -i /usr/share/backgrounds/space_is_linux.jpg &
+nm-tray &

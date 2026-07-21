@@ -2,8 +2,16 @@
 *.md5
 *.img
 custom-disk/
-custom-root/
 source-disk/
 build/
 cubic.conf
 sil-2026.05.12/
+custom-root/usr/
+custom-root/var/
+custom-root/proc/
+custom-root/sys/
+custom-root/dev/
+custom-root/run/
+custom-root/tmp/
+custom-root/lib/
+custom-root/lib64/

@@ -1,0 +1,1 @@
+/usr/lib/zfs-linux/zed.d/scrub_finish-notify.sh

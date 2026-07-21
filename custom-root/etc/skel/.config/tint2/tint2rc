@@ -1,0 +1,29 @@
+# SpaceIsLinux Tint2 Config
+panel_monitor = all
+panel_position = bottom center horizontal
+panel_size = 100% 32
+panel_margin = 0 0
+panel_padding = 4 2 4
+panel_background_id = 1
+wm_menu = 1
+
+# Background (Темно-космический)
+background_color = #1a1b26 90
+border_width = 1
+border_color = #7aa2f7 40
+
+# Taskbar
+taskbar_mode = single_desktop
+task_text = 1
+task_width = 200
+task_centered = 1
+task_font_color = #c0caf5 100
+
+# Цвета акцентов (Фиолетовый как у Нико)
+task_active_background_color = #bb9af7 50
+task_urgent_background_color = #f7768e 100
+
+# Clock
+time1_format = %H:%M
+time1_font = sans bold 10
+time1_font_color = #c0caf5 100

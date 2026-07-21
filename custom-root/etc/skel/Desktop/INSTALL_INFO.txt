@@ -1,0 +1,15 @@
+=========================================
+      SPACE IS LINUX | CORE 1.1
+=========================================
+
+SYSTEM OPTIMIZATION:
+- ZSWAP: Hardcoded (ZSTD)
+- UI: IceWM (Lite-mode active)
+
+TO INSTALL SYSTEM:
+1. Open Terminal (Ctrl+Alt+T)
+2. Type: sudo ubiquity
+3. Follow the wizard.
+
+P.S. Optimized for AMD C-70 and low RAM.
+=========================================

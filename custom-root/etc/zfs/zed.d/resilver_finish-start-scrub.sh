@@ -1,0 +1,1 @@
+/usr/lib/zfs-linux/zed.d/resilver_finish-start-scrub.sh

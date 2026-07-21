@@ -1,0 +1,43 @@
+
+menu "Applications" folder {
+menu "Science" folder {
+menu "Mathematics" folder {
+  prog "Bc" -  xterm -T "Bc" -e /usr/bin/bc
+  prog "Dc" -  xterm -T "Dc" -e /usr/bin/dc
+}
+}
+menu "Shells" folder {
+  prog "Bash" -  xterm -T "Bash" -e /bin/bash --login
+  prog "Dash" -  xterm -T "Dash" -e /bin/dash -i
+  prog "Sh" -  xterm -T "Sh" -e /bin/sh --login
+}
+menu "System" folder {
+menu "Administration" folder {
+  prog "Editres" - editres
+  prog "Ubiquity Installer" /usr/share/pixmaps/ubiquity.xpm /usr/bin/ubiquity
+  prog "Xfontsel" - xfontsel
+  prog "Xkill" - xkill
+}
+menu "Monitoring" folder {
+  prog "Xev" - x-terminal-emulator -e xev
+}
+menu "Package Management" folder {
+  prog "Aptitude Package Manager (text)" -  xterm -T "Aptitude Package Manager (text)" -e /usr/bin/aptitude-curses
+}
+}
+}
+menu "Screen" folder {
+menu "Locking" folder {
+  prog "Lock Screen (XScreenSaver)" - /usr/bin/xscreensaver-command -lock
+}
+menu "Saving" folder {
+  prog "Activate ScreenSaver (Next)" - /usr/bin/xscreensaver-command -next
+  prog "Activate ScreenSaver (Previous)" - /usr/bin/xscreensaver-command -prev
+  prog "Activate ScreenSaver (Random)" - /usr/bin/xscreensaver-command -activate
+  prog "Demo Screen Hacks" - /usr/bin/xscreensaver-command -demo
+  prog "Disable XScreenSaver" - /usr/bin/xscreensaver-command -exit
+  prog "Enable XScreenSaver" - /usr/bin/xscreensaver
+  prog "Reinitialize XScreenSaver" - /usr/bin/xscreensaver-command -restart
+  prog "ScreenSaver Preferences" - /usr/bin/xscreensaver-command -prefs
+}
+}

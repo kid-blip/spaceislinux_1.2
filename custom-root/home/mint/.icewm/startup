@@ -1,0 +1,3 @@
+#!/bin/bash
+icewmbg &          # Обои
+icewm-session &    # Сессия и панель

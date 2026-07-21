@@ -1,0 +1,28 @@
+#!/bin/bash
+# Sil-1.3 Venus Hardware Tuning Script
+
+# 1. PCIe Active State Power Management (ASPM) & Power Saving
+# Включаем агрессивное энергосбережение и скорость шины PCIe
+if [ -d /sys/module/pcie_aspm ]; then
+    echo powersave > /sys/module/pcie_aspm/parameters/policy 2>/dev/null
+fi
+
+# 2. I/O Scheduler Tuning for SSD/HDD
+# Настраиваем планировщик ввода-вывода: none/mq-deadline для SSD, bfq для HDD
+for disk in /sys/block/sd* /sys/block/nvme*; do
+    if [ -f "$disk/queue/rotational" ]; then
+        if [ "$(cat $disk/queue/rotational)" -eq 0 ]; then
+            echo mq-deadline > "$disk/queue/scheduler" 2>/dev/null
+        else
+            echo bfq > "$disk/queue/scheduler" 2>/dev/null
+        fi
+    fi
+done
+
+# 3. CPU Governor & CPU Quiet Tuning
+# Переводим CPU в режим баланса / энергосбережения в простое
+for zone in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do
+    echo powersave > "$zone" 2>/dev/null
+done
+
+exit 0

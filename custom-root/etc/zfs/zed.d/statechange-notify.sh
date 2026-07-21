@@ -1,0 +1,1 @@
+/usr/lib/zfs-linux/zed.d/statechange-notify.sh
