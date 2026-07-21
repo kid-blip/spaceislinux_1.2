@@ -26,3 +26,6 @@ To assemble or modify the root image:
 
 * Maintainer: kid-blip
 * Main Branch: `main`
+
+
+Download: https://drive.google.com/file/d/1yAuGnMz7Rxho1HBZucqSy8QIiwvIOYJ9/view?usp=sharing
