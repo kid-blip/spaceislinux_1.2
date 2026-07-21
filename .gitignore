@@ -15,3 +15,8 @@ custom-root/run/
 custom-root/tmp/
 custom-root/lib/
 custom-root/lib64/
+custom-root/swapfile
+custom-root/proc/*
+custom-root/sys/*
+custom-root/dev/*
+custom-root/tmp/*
