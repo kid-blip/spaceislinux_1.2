@@ -28,4 +28,4 @@ To assemble or modify the root image:
 * Main Branch: `main`
 
 
-Download: https://drive.google.com/file/d/1yAuGnMz7Rxho1HBZucqSy8QIiwvIOYJ9/view?usp=sharing
+Download: https://drive.google.com/file/d/1oI9f2GxhnEJkhujTzbFodw7qIyNu4wnP/view?usp=sharing
