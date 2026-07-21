@@ -1,0 +1,9 @@
+*.iso
+*.md5
+*.img
+custom-disk/
+custom-root/
+source-disk/
+build/
+cubic.conf
+sil-2026.05.12/
