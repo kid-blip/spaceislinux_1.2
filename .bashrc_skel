@@ -1,7 +1,6 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-# Добавь это в самый верх файла:
 echo "  ____                              ___                 _      _                    "
 echo " / ___|  _ __    __ _   ___   ___  |_ _| ___  | |    (_) _ __   _   _ __  __ "
 echo " \___ \ | '_ \  / _\` | / __| / _ \  | | / __| | |    | || '_ \ | | | |\ \/ / "
